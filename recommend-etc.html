@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>추천도서 - etc.</title>
+
+  <!-- ✅ GitHub Pages 호환을 위한 base 경로 지정 -->
+  <base href="/READSPAWN.GIM/">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
+
+  <style>
+    .section-title {
+      font-weight: 800;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 166px);
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .book-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-book {
+      width: 166px;
+      height: 246px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .book-title {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1f1f1f;
+      text-align: center;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 상위 탭 -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-item">도파민?</a>
+      <a href="reading-method.html" class="nav-item">독서방법</a>
+      <a href="review.html" class="nav-item">독후감</a>
+      <a href="recommend-novel.html" class="nav-item active">추천도서</a>
+    </nav>
+
+    <!-- 하위 탭 -->
+    <div class="sub-navbar">
+      <a href="recommend-novel.html" class="sub-item">소설</a>
+      <a href="recommend-selfdev.html" class="sub-item">자기계발</a>
+      <a href="recommend-essay.html" class="sub-item">시/에세이</a>
+      <a href="recommend-humanity.html" class="sub-item">인문/사회</a>
+      <a href="recommend-etc.html" class="sub-item active">etc.</a>
+    </div>
+
+    <!-- 도서 그리드 -->
+    <main class="main-content">
+      <div class="book-grid">
+        <div class="book-item">
+          <img src="assets/images/부1.jpg" class="image-book" alt="도서1" />
+          <div class="book-title">워런 버핏 웨이</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부2.jpg" class="image-book" alt="도서2" />
+          <div class="book-title">돈의 심리학</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부3.jpg" class="image-book" alt="도서3" />
+          <div class="book-title">어떻게 민주주의는 무너지는가</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부4.jpg" class="image-book" alt="도서4" />
+          <div class="book-title">클래식 좀 들어라</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부5.jpg" class="image-book" alt="도서5" />
+          <div class="book-title">혁명가 붓다</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부6.jpg" class="image-book" alt="도서6" />
+          <div class="book-title">프란치스코 교황 자서전 희망</div>
+        </div>
+        <div class="book-item">
+          <img src="assets/images/부7.jpg" class="image-book" alt="도서7" />
+          <div class="book-title">하늘을 봐, 바람이 불고 있어</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
